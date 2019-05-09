@@ -6,5 +6,7 @@ load_libraries <- function() {
   library(RCurl)
   library(RSelenium)
   library(rlang)
+  library(googlesheets)
+  library(janitor)
 
 }
