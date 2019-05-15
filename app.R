@@ -135,12 +135,12 @@ if(!signed_in) {
   Sys.sleep(4)
 
   client$findElement(using="css selector", value="#Email")$
-    sendKeysToElement(list("gleabp18@wfu.edu","\uE007"))
+    sendKeysToElement(list(source("cred-1.R")$value,"\uE007"))
 
   Sys.sleep(2)
 
   client$findElement(using="css selector", value="#Passwd")$
-    sendKeysToElement(list("aut3!Nih3ng34","\uE007"))
+    sendKeysToElement(list(source("cred-2.R")$value,"\uE007"))
 
   readline(prompt = "Press Enter Once 2 Factor Auth is Complete")
 
